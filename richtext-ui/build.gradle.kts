@@ -14,6 +14,10 @@ android {
 }
 
 kotlin {
+  iosX64()
+  iosArm64()
+  iosSimulatorArm64()
+
   sourceSets {
     val commonMain by getting {
       dependencies {
@@ -29,5 +33,6 @@ kotlin {
     val jvmMain by getting {
       kotlin.srcDir("src/commonJvmAndroid/kotlin")
     }
+
   }
 }
